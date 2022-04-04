@@ -35,7 +35,6 @@ TODO:
 - Holidu
 - VRBO
 - Flipkey
-- Outra cena qqr
 
 ## Fases do Projeto
 
