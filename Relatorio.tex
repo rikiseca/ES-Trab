@@ -1,7 +1,7 @@
 \documentclass[a4paper]{article}
 %\usepackage[utf8]{inputenc}
 %\usepackage[english]{babel}
-\usepackage[portuguese]{babel}
+\usepackage[main=portuguese,english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 %\usepackage{datetime}
@@ -13,8 +13,10 @@
 \usepackage[a4paper]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{float}
 \usepackage{natbib}
 \usepackage{graphicx}
+\usepackage{textcomp}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 %\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
@@ -31,88 +33,156 @@
 \begin{figure}[!t]
     \includegraphics[scale=0.2]{estig.png}
 \end{figure}
+
+\newpage
+\section{Resumo}
+No presente relatório pretende-se dar um ponto da situação relativo ao trabalho prático da unidade curricular de Engenharia de Software, cujo objectivo é o desenvolvimento de um projecto de software que servirá de base ao negócio da \textit{AirBnB}.
+Serão aqui descritos os softwares semelhantes que serviram de referência ao software a ser criado, será apresentado e explanado o modelo de desenvolvimento a utilizar, bem como as ferramentas CASE. Finalmente serão mencionados e brevemente descritos os passos para a fase de análise do projecto apresentando também para estes os prazos estimados.
+\newpage
+
+\section{Abstract}
+In this report we aim to give an overview of the pratical work for the Software Engineering curricular unit which is the development of a software objective that will serve as the basis for Airbnb's business. 
+Similar software that was used as a starting point will be here presented and described, the development model as well as CASE tools will be presented and explained. Lastly the steps of the analysis phase will be shortly described and the estimated deadlines for each will be presented.
+
 \newpage
 \tableofcontents
 \newpage
 
 \section{Introdução}
-Neste relatório iremos falar sobre as ferramentas e técnicas que propomos ser usadas na criação da aplicação AirBnB.
-
+No presente relatório apresentamos o planeamento feito até ao momento do desenvolvimento do software a realizar para o trabalho prático. Apresentamos e resumidamente descrevemos os softwares semelhantes nomeadamente, o Booking.com e o \textit{Trip Advisor}, o modelo ágil de desenvolvimento, o \textit{Kanban}, e por último apresentamos as diversas ferramentas a utilizar seguidas pelas estimativas de prazos e actividades para a primeira etapa do desenvolvimento de software, a fase de análise.
 \newpage
 
 \section{Softwares Semelhantes}
+Como estudado em sala de aulas, é importante partir de referências semelhantes e bem sucedidas para o desenvolvimento de um software. Tendo isto em mente identificamos os seguintes softwares a ser descritos.
 \subsection{Booking.com}
-O site Booking.com permite aos seus utilizadores reservar quartos em hotéis e pensões ao nível mundial, nos com o AirBnB queremos que os nosso utilizadores tenham a possibilidade de arrendar casas inteiras familiares/férias ou quartos para férias, trabalho, ou até alugueres de longa duração, permitido também se desejado que os nossos utilizadores sejam os arrendatários. 
-\\
-\\
-\includegraphics[scale=0.3]{booking.png}
-\\
+O site \textit{Booking.com} permite aos seus utilizadores reservar quartos em hotéis e pensões ao nível mundial, nos com o \textit{AirBnB} queremos que os nosso utilizadores tenham a possibilidade de arrendar casas inteiras familiares/férias ou quartos para férias, trabalho, ou até alugueres de longa duração, permitido também se desejado que os nossos utilizadores sejam os arrendatários. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{booking.png}    
+    \caption{Site Booking.com\texttrademark}
+\end{figure}
+
 \newpage
 \subsection{Trip Advisor}
-O Trip Advisor é um site de viagens que fornece informações e opiniões de conteúdos relacionados ao turismo. A informação neste site é maioritariamente gerada pelo utilizador e é sustentado por um modelo de negócio de publicidade.
+O \textit{Trip Advisor} é um site de viagens que fornece informações e opiniões de conteúdos relacionados ao turismo. A informação neste site é maioritariamente gerada pelo utilizador e é sustentado por um modelo de negócio de publicidade.
 Através deste site os utilizadores podem relatar as suas experiências em determinados estabelecimentos de alojamento e restauração, podem deixar comentários, fotos e podem classificar (com recurso a estrelas) os mesmos.
-Espelhamo-nos nestas funcionalidades para enriquecer o site da AirBnB permitindo aos utilizadores comunicar directamente com a pessoa a quem estão a alugar a casa/quarto e vice versa.
-\\
-\\
-\includegraphics[scale=0.25]{tripadvisor.png}
-\\
-\newpage
-\section{Modelo}
-O Kanban é um modelo ágil, criado na década de 60 pela empresa automobilística japonesa Toyota.
-Foi o modelo escolhido para implementação do nosso projecto pois mostrou-se um modelo intuitivo e simples de compreender, tendo como um dos diferenciais a visibilidade das tarefas visto que as divide em três etapas a saber, “To do”, “Doing” e “Done”, respectivamente “Tarefas por fazer”, “Tarefas a fazer” e “Tarefas feitas ou finalizadas”. Estas etapas podem ser colocadas em um quadro, o quadro de kanban, permitindo a equipe ter uma visão organizada do projecto possibilitando a selecção das prioridades e remoção das desnecessárias.
-\\
-\\
-\includegraphics[scale=0.3]{kanban.png}
+Baseamos-nos nestas funcionalidades para enriquecer o site da \textit{AirBnB} permitindo aos utilizadores comunicar directamente com a pessoa a quem estão a alugar a casa/quarto e vice versa.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{tripadvisor.png}
+    \caption{Site TripAdvisor\texttrademark}
+    \label{fig:tripadv}
+\end{figure}
 
 \newpage
-\section{Ferramentas Escolhidas}
+\section{Modelo de Desenvolvimento}
+O \textit{Kanban} é um modelo ágil, criado na década de 60 pela empresa automobilística japonesa \textit{Toyota}.
+Foi o modelo escolhido para implementação do nosso projecto pois mostrou-se um modelo intuitivo e simples de compreender, tendo como um dos diferenciais a visibilidade das tarefas visto que as divide em três etapas a saber, \textit{“To do”}, \textit{“Doing”} e \textit{“Doing”}, respectivamente “Tarefas por fazer”, “Tarefas a fazer” e “Tarefas feitas ou finalizadas”. Estas etapas podem ser colocadas num quadro, o quadro de \textit{Kanban}, permitindo a equipa ter uma visão organizada do projecto possibilitando a selecção das prioridades e remoção das tarefas desnecessárias.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{kanban.png}
+    \caption{Modelo Kanban\texttrademark}
+    \label{fig:kanban}
+\end{figure}
+
+\section{Ferramentas CASE}
 \subsection{Miro}
-O Miro é uma plataforma online de \textit{whiteboard} ou em Português de quadro branco que permite a equipas colaborarem e partilharem ideias entre si, para fazer 
-\textit{brainstorming} ou projectos já existentes.
+O \textit{Miro} é uma plataforma online de \textit{whiteboard} ou em Português de quadro branco que permite a equipas colaborarem e partilharem ideias entre si, para fazer 
+\textit{brainstorming} ou projectos já existentes, apresenta diversos \textit{templates} disponíveis aos utilizadores, permite a criação de apresentações, histórico de mudanças, entre outros. Adicionalmente pode ser conectado ao \textit{GitHub}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{miro.png}
+    \caption{Plataforma MIRO\texttrademark}
+    \label{fig:miro}
+\end{figure}
 
 \subsection{Microsoft Teams}
 Escolhemos o \textit{Microsoft Teams} como ferramenta de comunicação entre a nossa equipa, pois este permite fazer reuniões virtual e tem boa integração com os nossos email de trabalho, permitindo assim receber todos os alertas mesmo não estando a usar a aplicação nesse preciso momento.
 Permite também realizar partilha de ficheiros e partilha de ecrã nas reuniões que são funcionalidades que dão muito jeito à nossa equipa.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{Teams.jpg}
+    \caption{Microsoft Teams\texttrademark}
+    \label{fig:teams}
+\end{figure}
+
 \subsection{GitHub}
 Para controlo de versões utilizaremos o sistema \textit{Git}, mais especificamente o \textit{GitHub}, que nos vais permitir tem completo controlo do sistema de versões, o que é muito útil pois nos pode permitir reverter ao estado inicial caso tenham ocorrido erros na versão mais recente.
 Permite também que todos os membros da equipa tenham sempre a versão mais recente de tudo o que se está a usar.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{Git.png}
+    \caption{Repositório GitHub\texttrademark}
+    \label{fig:github}
+\end{figure}
+
 \subsection{Overleaf}
-Iremos utilizar o \textit{Overleaf} para elaboração dos relatórios deste projecto, o \textit{Overleaf} é um editor de \textit{LaTeX} online que além de permitir utilizar todas a funcionalidades da linguagem \textit{LaTeX} permite ainda colaboração simultânea entre 2 ou mais pessoas.
+Iremos utilizar o \textit{Overleaf} para elaboração dos relatórios deste projecto, o \textit{Overleaf} é um editor de \textit{LaTeX} online que além de permitir utilizar todas a funcionalidades da linguagem \textit{LaTeX} permite ainda colaboração simultânea entre 2 ou mais pessoas e a visualização de um histórico de mudanças.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{overleaf.png}
+    \caption{Editor de texto para LaTeX - Overleaf\texttrademark }
+    \label{fig:overleaf}
+\end{figure}
 
 \subsection{Visual Paradigm}
 O \textit{Visual Paradigm} é um programa que nos vai permitir utilizar ou fazer qualquer tipo de diagrama \textit{UML} algo que é essencial ao nosso projecto. 
-\newpage
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{vParadigm.png}
+    \caption{Aplicação Visual Paradigm\texttrademark}
+    \label{fig:VP}
+\end{figure}
 
 \section{Fase de Análise}
 \subsection{Recolha de Informação}
- - Nesta fase será feito o levantamento da informação relativa ao projecto, 
- - Prazo: 2 Semanas
+ Nesta fase será feito o levantamento da informação relativa ao projecto, serão levantados os requisitos e necessidades dos clientes através de encontros, realização de entrevistas e pesquisas.\\
+O tempo para realização deste passo esta estimado em 2 semanas. 
     
-\subsection{Analise da informação e identificação dos requisitos}
-- Cenas da engenharia de requisitos (funcionais, não funcionais e técnicos)
-- Prazo: 2,5 Semanas
+\subsection{Análise da informação e identificação dos requisitos}
+Neste passo será analisada a informação recolhida na actividade anterior, serão identificados e classificados os requisitos e serão estudadas as necessidades de forma a priorizar as essenciais.
+O tempo estimado para realização deste passo é de 15 dias.
 
 \subsection{Elaboração do diagrama dos casos de uso}
-- Cena muito detalhada de cenas detalhadas do projecto em principio se calhar
-- Explicar os requisitos (explicar no geral)
-- Prazo: 2 Semanas
+Ainda por decidir.
 
-\section{Reuniões}
-Iremos fazer cerca de duas a três reuniões semanais, sendo que 2 serão via \textit{Microsoft Teams} e a terceira será pessoalmente.
+\section{Fase de Desenho}
+\subsection{Elaboração dos diagramas de sequência do UML}
+Ainda por decidir.
+\subsection{Elaboração do diagrama de classes}
+Ainda por decidir.
+\subsection{Elaboração de outros diagramas do UML}
+Ainda por decidir.
+
+\section{Fase de Gestão}
+Aplicação de mecanismos de validação, comunicação de equipas e
+controlo de versões.
+
+\section{Observações}
+Tenha em consideração que, os tempos acima estimados na fase de análise podem vir a ser alterados de acordo com o fluxo de trabalho da equipa. Note também, que as fases de Desenho e Gestão não apresentam descrições ou estimativas visto que tais temas não foram ainda abordados em sala de aulas.
+O prazo para finalização e entrega do projecto esta para o dia 16 de Junho de 2022.
+
+\section{Reuniões de equipa}
+A equipa irá reunir-se três vezes por semana, sendo que duas da três reuniões serão via \textit{Microsoft Teams} e a terceira será em lugar a definir.
+A equipa poderá comunicar a qualquer momento através do \textit{chat} do \textit{Microsoft Teams}, adicionalmente poderá ver o progresso feito através do \textit{Miro} e \textit{GitHub}.
 
 \newpage
 \section{Conclusão}
+Concluímos que será necessária bastante pesquisa e estudo para realização do projecto, além de dedicação e compromisso por parte da equipa de modo a realizar as tarefas nos tempos indicados com vista a cumprir as datas estimadas e de entrega. Será necessária também uma profunda exploração das ferramentas escolhidas de modo a tirar o máximo proveito das mesmas para maximizar a eficiência e produtividade da equipa.
 
+\newpage
 \section{Webgrafia}
 \href{https://pt.wikipedia.org/wiki/TripAdvisor}{Wiki do Trip Advisor}\\
-\href{https://www.projectbuilder.com.br/blog/quais-sao-os-principais-tipos-de-metodos-ageis/}{Modelo Ageis}
+\href{https://www.projectbuilder.com.br/blog/quais-sao-os-principais-tipos-de-metodos-ageis/}{Modelos Ágeis}
 \bibliographystyle{plain}
 \bibliography{references}
-
-%\textit{} - italico 
-%\textbf{} - bold 
 
 \end{document}
