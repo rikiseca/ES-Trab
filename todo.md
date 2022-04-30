@@ -63,6 +63,11 @@ TODO:
     - Como areendatores
     - Como arendatarios
 
+
+## Divisão de Tarefas
+
+- Recolha de informação
+
 ## Links Úteis 
 
 [Modelos Ageis](https://www.projectbuilder.com.br/blog/quais-sao-os-principais-tipos-de-metodos-ageis/)
