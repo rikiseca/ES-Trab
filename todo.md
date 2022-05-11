@@ -45,6 +45,7 @@ TODO:
     - Prazo: 2 Semanas
 - Analise da informaçao e identificação dos requisitos
     - Cenas da engenharia de requisitos (funcionais, não funcionais e tecnicos)
+    - [Requisitos](https://enkonix.com/blog/functional-requirements-vs-non-functional/)
     - Prazo: 2,5 Semanas
 - Elaboração do diagrama dos casos de uso 
     - Cena muito detalahda de cenas detalhadas do projeto em principio se calhar
