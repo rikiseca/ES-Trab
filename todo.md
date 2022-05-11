@@ -45,7 +45,6 @@ TODO:
     - Prazo: 2 Semanas
 - Analise da informaçao e identificação dos requisitos
     - Cenas da engenharia de requisitos (funcionais, não funcionais e tecnicos)
-    - [Requisitos](https://enkonix.com/blog/functional-requirements-vs-non-functional/)
     - Prazo: 2,5 Semanas
 - Elaboração do diagrama dos casos de uso 
     - Cena muito detalahda de cenas detalhadas do projeto em principio se calhar
@@ -69,6 +68,28 @@ TODO:
 
 - Recolha de informação
 
+## Requisitos
+
+### Requisitos Funcionias
+
+- O sistema deve permitir a inscrição de novos usuários, realizando a validação através de um e-mail de confirmação. Prioridade: Obrigatório.
+- Deve ser possível ao usuário solicitar a redefinição de sua senha, informando o e-mail cadastrado. Prioridade: Importante.
+- O sistema deve permitir pagamentos atrvés de multiplas plataformas diferentes: Obrigatório.
+- O sistema deve permitir aos utilizadores fazer pesquisas detalhadas (talvez explicar os parametros das mesmas depois).
+- O sistema deve permitir ao utilizador arrendar e ser arrendatário (nem sei se é assim que se escreve, e tipo alugar para ele e ser ele a alugar tb).
+
+
+### Requisitos Não Funcionias
+
+- O sistema deve ser multiplataforma, possibilitando seu uso em dispositivos com O.S. Windows, Linux e macOS. Prioridade: Obrigatório.
+- O sistema deve ter garantida uma disponibilidade maior que 98.05%. Prioridade: Obrigatório.
+- O desenvolvimento deve ser em linguagem Java, ou javascript, dps logo escolhemos uma.
+- O desenvolvimeto do código será feito no vscode.
+- O github será utilizado para controlo de versões.
+
 ## Links Úteis 
 
 [Modelos Ageis](https://www.projectbuilder.com.br/blog/quais-sao-os-principais-tipos-de-metodos-ageis/)
+[Requisitos](https://enkonix.com/blog/functional-requirements-vs-non-functional/)
+[Requisitos Melhor explicado](https://pt.linkedin.com/pulse/requisitos-funcionais-e-n%C3%A3o-v%C3%A2nia-porto-da-silva)
+[Ainda mais Requisitos](https://codificar.com.br/requisitos-funcionais-nao-funcionais/#:~:text=Um%20requisito%20funcional%20define%2Dse,listas%2C%20emiss%C3%A3o%20de%20relat%C3%B3rios%20etc.)
