@@ -73,17 +73,23 @@ TODO:
 ### Requisitos Funcionias
 
 - O sistema deve permitir a inscrição de novos usuários, realizando a validação através de um e-mail de confirmação. Prioridade: Obrigatório.
+- O sistema deve permitir aos utilizadores criar conta a partir um conta de outro serviço (ex: gmail, facebook).
 - Deve ser possível ao usuário solicitar a redefinição de sua senha, informando o e-mail cadastrado. Prioridade: Importante.
 - O sistema deve permitir pagamentos atrvés de multiplas plataformas diferentes: Obrigatório.
 - O sistema deve permitir aos utilizadores fazer pesquisas detalhadas (talvez explicar os parametros das mesmas depois).
 - O sistema deve permitir ao utilizador arrendar e ser arrendatário (nem sei se é assim que se escreve, e tipo alugar para ele e ser ele a alugar tb).
-
+- O sistema deve permitir comunicação direta entre o arrendador e o arrendatário. Prioridade: Obrigatório.
+- O sistema deve permitir ao utilizador deixar uma classificação à moradia onde ficou (1 a 5 estrelas) bem como comentários sobre a mesma.
+- O sistema deve permitir que o utilizador altere os seus dados da conta.
+- O sistema deve permitir que o utilizador crie listas de desejos para viagens futuras.
 
 ### Requisitos Não Funcionias
 
 - O sistema deve ser multiplataforma, possibilitando seu uso em dispositivos com O.S. Windows, Linux e macOS. Prioridade: Obrigatório.
 - O sistema deve ter garantida uma disponibilidade maior que 98.05%. Prioridade: Obrigatório.
-- O desenvolvimento deve ser em linguagem Java, ou javascript, dps logo escolhemos uma.
+- O desenvolvimento do web site deve ser em linguagem Java, ou javascript, dps logo escolhemos uma.
+- O desenvolvimento da aplicação para iOS deve ser em swift.
+- O desenvolvimento da aplicação android deve ser em java/kotlin.
 - O desenvolvimeto do código será feito no vscode.
 - O github será utilizado para controlo de versões.
 
