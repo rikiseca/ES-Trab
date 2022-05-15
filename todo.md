@@ -82,6 +82,7 @@ TODO:
 - O sistema deve permitir ao utilizador deixar uma classificação à moradia onde ficou (1 a 5 estrelas) bem como comentários sobre a mesma.
 - O sistema deve permitir que o utilizador altere os seus dados da conta.
 - O sistema deve permitir que o utilizador crie listas de desejos para viagens futuras.
+- O sistema deve permitir reembolsos.
 
 ### Requisitos Não Funcionais
 
@@ -95,6 +96,13 @@ TODO:
 - O desenvolvimento da aplicação android deve ser em java/kotlin.
 - O desenvolvimeto do código será feito no vscode.
 - O github será utilizado para controlo de versões.
+
+## Casos de uso
+- Criar conta
+- Realizar um pagamento
+- Arrendar uma casa
+- Por uma casa para arrendar
+- Cancelar uma estadia (pedir o reembolso)
 
 ## Links Úteis 
 
