@@ -83,10 +83,13 @@ TODO:
 - O sistema deve permitir que o utilizador altere os seus dados da conta.
 - O sistema deve permitir que o utilizador crie listas de desejos para viagens futuras.
 
-### Requisitos Não Funcionias
+### Requisitos Não Funcionais
 
 - O sistema deve ser multiplataforma, possibilitando seu uso em dispositivos com O.S. Windows, Linux e macOS. Prioridade: Obrigatório.
 - O sistema deve ter garantida uma disponibilidade maior que 98.05%. Prioridade: Obrigatório.
+
+### Requisitos de Desenvolvimento
+
 - O desenvolvimento do web site deve ser em linguagem Java, ou javascript, dps logo escolhemos uma.
 - O desenvolvimento da aplicação para iOS deve ser em swift.
 - O desenvolvimento da aplicação android deve ser em java/kotlin.
