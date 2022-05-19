@@ -96,6 +96,7 @@ TODO:
 - O desenvolvimento da aplicação android deve ser em java/kotlin.
 - O desenvolvimeto do código será feito no vscode.
 - O github será utilizado para controlo de versões.
+- (adicianar requisitos acaerca de computadores, servidores, cenas desse género)
 
 ## Casos de uso
 - Criar conta
